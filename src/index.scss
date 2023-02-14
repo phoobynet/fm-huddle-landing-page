@@ -1,0 +1,15 @@
+:root {
+  --clr-pink: hsl(322, 100%, 66%);
+  --clr-light-pink: hsl(321, 100%, 78%);
+  --clr-light-red: hsl(0, 100%, 63%);
+
+  --clr-very-dark-cyan: hsl(192, 100%, 9%);
+  --clr-very-pale-blue: hsl(207, 100%, 98%);
+
+  --ff-primary: 'Poppins', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--ff-primary);
+}
