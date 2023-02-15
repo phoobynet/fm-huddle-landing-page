@@ -1,0 +1,25 @@
+.callToActionBtn {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 2.5rem;
+  border-radius: 2rem;
+  background-color: var(--clr-pink);
+  box-shadow: 0 3px 7px rgb(0 37 46 / 22.3%);
+  color: white;
+  cursor: pointer;
+  font-family: var(--ff-secondary);
+  font-weight: 700;
+  text-align: center;
+  transition-duration: 0.2s;
+
+  &:hover {
+    background-color: var(--clr-light-pink);
+  }
+
+  &:active {
+    background-color: var(--clr-pink);
+    box-shadow: 0 1px 5px rgb(0 37 46 / 22.3%);
+    transform: translateY(4px);
+  }
+}

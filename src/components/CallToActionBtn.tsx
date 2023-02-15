@@ -1,15 +1,15 @@
-import styles from './TryItFreeBtn.module.scss'
+import styles from './CallToActionBtn.module.scss'
 import type { HTMLAttributes } from 'react'
 
 interface Props extends Omit<HTMLAttributes<HTMLButtonElement>, 'className'> {
   label: string
 }
 
-export default function TryItFreeBtn({ label, ...args }: Props) {
+export default function CallToActionBtn({ label, ...args }: Props) {
   return (
     <button
-      className={styles.tryItFreeBtn}
       {...args}
+      className={styles.callToActionBtn}
     >
       {label}
     </button>

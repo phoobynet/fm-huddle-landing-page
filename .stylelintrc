@@ -1,6 +1,11 @@
 {
-  "extends": "stylelint-config-standard-scss",
+  "plugins": ["stylelint-prettier"],
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-idiomatic-order"
+  ],
   "rules": {
-    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$"
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "prettier/prettier": true
   }
 }

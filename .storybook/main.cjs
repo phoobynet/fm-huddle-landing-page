@@ -5,6 +5,9 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+
+    // Disabled due to https://github.com/chromaui/storybook-addon-pseudo-states/issues/48
+    // 'storybook-addon-pseudo-states',
   ],
   framework: '@storybook/react',
   core: {
