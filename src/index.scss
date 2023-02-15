@@ -4,10 +4,13 @@
   --clr-light-red: hsl(0deg 100% 63%);
   --clr-very-dark-cyan: hsl(192deg 100% 9%);
   --clr-very-pale-blue: hsl(207deg 100% 98%);
+  --clr-background: hsl(0deg 0% 95% / 100%);
+  --clr-text: hsl(192deg 100% 9%);
   --ff-primary: 'Poppins', sans-serif;
   --ff-secondary: 'Open Sans', sans-serif;
 }
 
 body {
+  background-color: var(--clr-background);
   font-family: var(--ff-primary);
 }

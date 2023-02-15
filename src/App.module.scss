@@ -1,0 +1,61 @@
+.app {
+  display: grid;
+  align-items: start;
+  padding: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    'heading'
+    'hero'
+    'stats'
+    'features'
+    'callToAction'
+    'footer';
+  grid-template-rows: 5.7fr 36.3125rem repeat(4, minmax(0, 1fr));
+  place-content: center;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: heading;
+
+    :last-child {
+      width: 4.9rem;
+    }
+  }
+
+  .hero {
+    grid-area: hero;
+  }
+
+  .stats {
+    grid-area: stats;
+  }
+
+  .features {
+    grid-area: features;
+  }
+
+  .callToAction {
+    grid-area: callToAction;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 4.8375rem;
+    padding-right: 3.9375rem;
+    padding-left: 3.9375rem;
+    grid-template-rows: 16.6rem 36.3125rem repeat(4, minmax(0, 1fr));
+
+    .heading {
+      padding-left: 1rem;
+
+      :last-child {
+        min-width: 8.4rem;
+      }
+    }
+  }
+}

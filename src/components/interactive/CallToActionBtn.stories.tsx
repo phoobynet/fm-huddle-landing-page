@@ -2,7 +2,7 @@ import CallToActionBtn from './CallToActionBtn'
 import { type ComponentMeta, type ComponentStory } from '@storybook/react'
 
 const stories: ComponentMeta<typeof CallToActionBtn> = {
-  title: 'components/CallToActionBtn',
+  title: 'components/interactive/CallToActionBtn',
   component: CallToActionBtn,
   argTypes: {
     onClick: { action: 'clicked' },
@@ -11,7 +11,7 @@ const stories: ComponentMeta<typeof CallToActionBtn> = {
     (Story) => (
       <div
         style={{
-          width: '12rem',
+          width: '20rem',
           margin: '2rem',
         }}
       >
@@ -27,7 +27,7 @@ const Template: ComponentStory<typeof CallToActionBtn> = (args) => (
 
 export const Default = Template.bind({})
 Default.args = {
-  label: 'Call To Action',
+  label: 'Get Started For Free',
 }
 
 export default stories

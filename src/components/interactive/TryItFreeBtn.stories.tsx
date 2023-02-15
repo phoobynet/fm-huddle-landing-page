@@ -1,8 +1,8 @@
-import TryItFreeBtn from '@/components/TryItFreeBtn'
+import TryItFreeBtn from './TryItFreeBtn'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 const tryItFreeBtn: ComponentMeta<typeof TryItFreeBtn> = {
-  title: 'components/TryItFreeBtn',
+  title: 'components/interactive/TryItFreeBtn',
   component: TryItFreeBtn,
   argTypes: {
     onClick: { action: 'clicked' },
