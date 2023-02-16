@@ -1,5 +1,7 @@
 import styles from './App.module.scss'
+import Features from '@/components/Features'
 import Hero from '@/components/Hero'
+import Stats from '@/components/Stats'
 import Logo from '@/components/images/Logo'
 import TryItFreeBtn from '@/components/interactive/TryItFreeBtn'
 
@@ -14,10 +16,10 @@ export default function App() {
         <Hero />
       </section>
       <section className={styles.stats}>
-        <div>stats</div>
+        <Stats />
       </section>
       <section className={styles.features}>
-        <div>features</div>
+        <Features />
       </section>
       <section className={styles.callToAction}>
         <div>callToAction</div>

@@ -1,7 +1,7 @@
 .app {
   display: grid;
   align-items: start;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
   grid-auto-columns: 1fr;
   grid-template-areas:
     'heading'
@@ -10,13 +10,14 @@
     'features'
     'callToAction'
     'footer';
-  grid-template-rows: 5.7fr 36.3125rem repeat(4, minmax(0, 1fr));
+  grid-template-rows: 8.5rem 43.7125rem 23.7rem repeat(3, auto);
   place-content: center;
 
   .heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1.5rem;
     grid-area: heading;
 
     :last-child {
@@ -25,11 +26,14 @@
   }
 
   .hero {
+    padding: 0 1.5rem;
     grid-area: hero;
   }
 
   .stats {
+    align-self: self-start;
     grid-area: stats;
+    justify-self: center;
   }
 
   .features {

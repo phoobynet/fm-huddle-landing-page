@@ -1,4 +1,5 @@
 import styles from './Hero.module.scss'
+import screenMockups from '@/assets/images/screen-mockups.svg'
 import CallToActionBtn from '@/components/interactive/CallToActionBtn'
 
 export default function Hero() {
@@ -13,6 +14,10 @@ export default function Hero() {
       <div className={styles.callToAction}>
         <CallToActionBtn label="Get Started For Free" />
       </div>
+      <img
+        src={screenMockups}
+        alt=""
+      />
     </div>
   )
 }
