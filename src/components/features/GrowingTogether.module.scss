@@ -1,0 +1,7 @@
+@import 'features';
+
+.growingTogether {
+  @include feature;
+
+  background-color: var(--clr-very-pale-blue);
+}

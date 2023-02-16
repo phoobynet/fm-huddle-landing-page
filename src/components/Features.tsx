@@ -2,23 +2,13 @@ import styles from './Features.module.scss'
 import flowingConversation from '@/assets/images/illustration-flowing-conversation.svg'
 import growingTogether from '@/assets/images/illustration-grow-together.svg'
 import yourUsers from '@/assets/images/illustration-your-users.svg'
+import GrowingTogether from '@/components/features/GrowingTogether'
 
 export default function Features() {
   return (
     <ul className={styles.features}>
       <li>
-        <article className={styles.growingTogether}>
-          <img
-            src={growingTogether}
-            alt=""
-          />
-          <h3>Grow Together</h3>
-          <p>
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p>
-        </article>
+        <GrowingTogether />
       </li>
       <li>
         <article className={styles.flowingConversation}>
