@@ -1,7 +1,25 @@
 @import 'features';
 
 .growingTogether {
-  @include feature;
+  &::before {
+    display: block;
+    height: 112px;
+    background-image: url('@/assets/images/bg-section-top-mobile-1.svg');
+    background-repeat: no-repeat;
+    content: '';
+  }
 
-  background-color: var(--clr-very-pale-blue);
+  &::after {
+    display: block;
+    height: 112px;
+    background-image: url('@/assets/images/bg-section-bottom-mobile-1.svg');
+    background-repeat: no-repeat;
+    content: '';
+  }
+
+  > article {
+    @include feature;
+
+    background-color: var(--clr-very-pale-blue);
+  }
 }

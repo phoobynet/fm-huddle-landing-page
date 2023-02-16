@@ -1,2 +1,23 @@
+@import 'features';
+
 .yourUsers {
+  > article {
+    @include feature;
+  }
+
+  &::before {
+    display: block;
+    height: 112px;
+    background-image: url('@/assets/images/bg-section-top-mobile-2.svg');
+    background-repeat: no-repeat;
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    height: 112px;
+    background-image: url('@/assets/images/bg-section-bottom-mobile-2.svg');
+    background-repeat: no-repeat;
+    content: '';
+  }
 }
