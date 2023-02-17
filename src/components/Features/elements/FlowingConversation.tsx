@@ -12,7 +12,8 @@ export default function FlowingConversation() {
         <h3>Flowing Conversations</h3>
         <p>
           You wouldn&apos;t paginate a conversation in real life, so why do it
-          online? Our threads have just-in-time loading for a more natural flow.
+          online? Our threads have just&#x2011;in&#x2011;time loading for a more
+          natural flow.
         </p>
       </article>
     </div>

@@ -1,13 +1,28 @@
-@import 'features';
+@import 'feature';
 
 .yourUsers {
   > article {
     @include feature;
+
+    background-color: var(--clr-very-pale-blue);
+
+    img {
+      width: 267px;
+      padding-top: 1.2rem;
+    }
+
+    h3 {
+      padding-top: 5rem;
+    }
+
+    p {
+      padding-bottom: 6rem;
+    }
   }
 
   &::before {
     display: block;
-    height: 112px;
+    height: 6rem;
     background-image: url('@/assets/images/bg-section-top-mobile-2.svg');
     background-repeat: no-repeat;
     content: '';
@@ -15,7 +30,7 @@
 
   &::after {
     display: block;
-    height: 112px;
+    height: 7rem;
     background-image: url('@/assets/images/bg-section-bottom-mobile-2.svg');
     background-repeat: no-repeat;
     content: '';

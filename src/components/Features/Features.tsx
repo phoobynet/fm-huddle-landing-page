@@ -1,7 +1,7 @@
 import styles from './Features.module.scss'
-import FlowingConversation from '@/components/features/FlowingConversation'
-import GrowingTogether from '@/components/features/GrowingTogether'
-import YourUsers from '@/components/features/YourUsers'
+import FlowingConversation from './elements/FlowingConversation'
+import GrowingTogether from './elements/GrowingTogether'
+import YourUsers from './elements/YourUsers'
 
 export default function Features() {
   return (
