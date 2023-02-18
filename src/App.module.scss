@@ -8,9 +8,9 @@
     'hero'
     'stats'
     'features'
-    'callToAction'
+    'call-to-action'
     'footer';
-  grid-template-rows: 8.5rem 43.7125rem 23.7rem repeat(3, auto);
+  grid-template-rows: [heading] 8.5rem [hero] 43.7125rem [stats] 23.7rem [features] 135.5rem [call-to-action] 1fr [footer] 1fr;
   place-content: center;
 
   .heading {
@@ -27,25 +27,15 @@
 
   .hero {
     padding: 0 1.5rem;
-    grid-area: hero;
   }
 
   .stats {
     align-self: self-start;
-    grid-area: stats;
     justify-self: center;
   }
 
-  .features {
-    grid-area: features;
-  }
-
-  .callToAction {
-    grid-area: callToAction;
-  }
-
-  .footer {
-    grid-area: footer;
+  :last-child {
+    justify-self: end;
   }
 
   @media (min-width: 1440px) {

@@ -17,3 +17,10 @@ body {
   color: var(--clr-text);
   font-family: var(--ff-primary);
 }
+
+h1 {
+  font-family: var(--ff-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+}

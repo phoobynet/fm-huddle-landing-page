@@ -1,5 +1,7 @@
 import styles from './App.module.scss'
 import Features from '@/components/Features'
+import Footer from '@/components/Footer'
+import GetStartedCta from '@/components/GetStartedCta'
 import Hero from '@/components/Hero'
 import Stats from '@/components/Stats'
 import Logo from '@/components/images/Logo'
@@ -22,10 +24,10 @@ export default function App() {
         <Features />
       </section>
       <section className={styles.callToAction}>
-        <div>callToAction</div>
+        <GetStartedCta />
       </section>
       <section className={styles.footer}>
-        <div>footer</div>
+        <Footer />
       </section>
     </div>
   )
